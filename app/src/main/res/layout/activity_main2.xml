@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.startpageice.Main2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@drawable/jumps" />
+
+    <TextView
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@bool/layout_alignParentTop"
+        android:layout_centerHorizontal="@bool/layout_centerHorizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:textSize="@dimen/textTitleSize" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/skaterText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/marginTop" />
+
+
+    <TextView
+        style="@style/skaterText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="@bool/layout_alignParentRight"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/marginTop" />
+
+
+    <TextView
+        android:id="@+id/scoreTeam1"
+        style="@style/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_pair1"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:textSize="@dimen/textSizeScore" />
+
+
+    <TextView
+        android:id="@+id/scoreTeam2"
+        style="@style/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_pair2"
+        android:layout_alignParentRight="@bool/layout_alignParentRight"
+        android:layout_marginRight="@dimen/margin"
+        android:textSize="@dimen/textSizeScore" />
+
+
+    <Button
+        android:id="@+id/button_skater1"
+        style="@style/skater1Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="@bool/layout_alignParentBottom"
+        android:onClick="videoButton1" />
+
+    <Button
+        android:id="@+id/button_skater2"
+        style="@style/skater2Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="@bool/layout_alignParentBottom"
+        android:layout_alignParentRight="@bool/layout_alignParentRight"
+        android:onClick="videoButton2" />
+
+    <Button
+        style="@style/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="@bool/layout_alignParentBottom"
+        android:layout_centerHorizontal="@bool/layout_centerHorizontal"
+        android:onClick="resetScore" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="@bool/layout_alignParentStart"
+        android:layout_alignTop="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginTopLayout"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elements" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/toeloop" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/salchow" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/loop" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/flip" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/lutz" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/axel" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dificulty" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/toeloop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/salchow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/loop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/flip1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/lutz1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/axel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginColumns"
+                    android:text="@string/goe" />
+
+                <Spinner
+                    android:id="@+id/goeToeloop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+
+                <Spinner
+                    android:id="@+id/goeSalchow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeLoop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeFlip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeLutz1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeAxel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginBetweenLayouts"
+            android:layout_marginTop="@dimen/marginTopLayout"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elements" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/toeloop" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/salchow" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/loop" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/flip" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/lutz" />
+
+                    <TextView
+                        style="@style/jumpsTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/axel" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dificulty" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/toeloop2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/salchow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/loop2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/flip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/lutz2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/axel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:entries="@array/difficulty_level"
+                        android:prompt="@string/difficulty" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goe" />
+
+                <Spinner
+                    android:id="@+id/goeToeloop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeSalchow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeLoop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeFlip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeLutz2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+
+                <Spinner
+                    android:id="@+id/goeAxel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/grade_of_execution"
+                    android:prompt="@string/drop_down_list" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

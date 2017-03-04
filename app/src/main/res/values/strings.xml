@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">StartPageIce</string>
+    <string name="start">START</string>
+    <string name="explanation">*Please rotate your device after clicking the\n START Button</string>
+    <string name="tableTitle">TECHNICAL SCORE</string>
+    <string name="title">JUMPS</string>
+    <string name="skater_1">SKATER 1</string>
+    <string name="skater_2">SKATER 2</string>
+    <string name="elements">ELEMENTS</string>
+    <string name="toeloop">TOELOOP</string>
+    <string name="salchow">SALCHOW</string>
+    <string name="loop">LOOP</string>
+    <string name="flip">FLIP</string>
+    <string name="lutz">LUTZ</string>
+    <string name="axel">AXEL</string>
+    <string name="upright">UPRIGHT</string>
+    <string name="layback">LAYBACK</string>
+    <string name="camel">CAMEL</string>
+    <string name="sit">SIT</string>
+    <string name="dificulty">DIFICULTY</string>
+    <string name="goe">GOE</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="fall">F</string>
+    <string name="video_1">VIDEO REPLAY\n SKATER 1</string>
+    <string name="video_2">VIDEO REPLAY\n SKATER 2</string>
+    <string name="reset">clear\n entry</string>
+    <string name="score">SCORE</string>
+</resources>

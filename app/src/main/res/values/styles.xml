@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="explanation">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="titleText">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:text">JUMPS</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">cursive</item>
+    </style>
+
+    <style name="skaterText1">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:text">@string/skater_1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="skaterText2">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:text">@string/skater_2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="textScore">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="skater1Video">
+        <item name="android:text">@string/video_1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="skater2Video">
+        <item name="android:text">@string/video_2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="resetButton">
+        <item name="android:text">@string/reset</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@color/blue_grey</item>
+    </style>
+
+    <style name="titleColumn">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="jumpsTypes">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+</resources>
