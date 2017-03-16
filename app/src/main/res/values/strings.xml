@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">StartPageIce</string>
     <string name="start">START</string>
-    <string name="explanation">*Please rotate your device after clicking the\n START Button</string>
+    <string name="hint">*Please rotate your device after clicking the\n START Button</string>
     <string name="tableTitle">TECHNICAL SCORE</string>
     <string name="title">JUMPS</string>
     <string name="skater_1">SKATER 1</string>
@@ -17,7 +17,7 @@
     <string name="layback">LAYBACK</string>
     <string name="camel">CAMEL</string>
     <string name="sit">SIT</string>
-    <string name="dificulty">DIFICULTY</string>
+    <string name="difficulty">DIFICULTY</string>
     <string name="goe">GOE</string>
     <string name="one">1</string>
     <string name="two">2</string>
@@ -28,4 +28,16 @@
     <string name="video_2">VIDEO REPLAY\n SKATER 2</string>
     <string name="reset">clear\n entry</string>
     <string name="score">SCORE</string>
+    <string name="jumps_image">skater jump image</string>
+    <string name="steps_sequence">STEPS\nSEQUENCE</string>
+    <string name="coregraphic_sequence">CHOREGRAPHIC\nSEQUENCE</string>
+    <string name="button1">VIDEO REPLAY\nPAIR 1</string>
+    <string name="button2">VIDEO REPLAY\nPAIR 2</string>
+    <string name="difficulty_level">DIFFICULTY</string>
+    <string name="skater1">SKATER 1</string>
+    <string name="skater2">SKATER 2</string>
+    <string name="steps">STEPS</string>
+    <string name="title_start">Ladys Single</string>
+    <string name='spins'>SPINS</string>
+
 </resources>

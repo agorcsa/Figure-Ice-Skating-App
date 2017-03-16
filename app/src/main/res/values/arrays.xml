@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="difficulty">Choose a  difficulty level</string>
+    <string name="dificulty">Choose a  difficulty level</string>
     <string-array name="difficulty_level">
         <item>0</item>
         <item>1</item>
@@ -10,7 +10,6 @@
         <item>4</item>
         <item>F</item>
     </string-array>
-
 
     <string name="drop_down_list">Choose a GOE</string>
     <string-array name="grade_of_execution">
@@ -23,14 +22,11 @@
         <item>-3</item>
     </string-array>
 
-    <array name="rainbowDifficulty">
-        <item>@color/dark_lila</item>
-        <item>@color/medium_lila</item>
-        <item>@color/light_lila</item>
-        <item>@color/almost_white</item>
-        <item>@color/light_pink</item>
-        <item>@color/medium_lila</item>
-        <item>@color/dark_pink</item>
-    </array>
+    <string name="difficulty_choreo">Chose a difficulty level for the choreography</string>
+    <string-array name="difficulty_choreography">
+        <item>0</item>
+        <item>B</item>
+        <item>F</item>
+    </string-array>
 
 </resources>

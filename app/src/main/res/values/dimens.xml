@@ -11,5 +11,10 @@
     <dimen name="marginTopLayout">20dp</dimen>
     <dimen name="marginBottom">25dp</dimen>
     <dimen name="marginBetweenLayouts">160dp</dimen>
+    <dimen name="marginBetweenLayoutsSteps">160dp</dimen>
     <dimen name="textTitleSize">18dp</dimen>
+    <dimen name="textSizeStart">25sp</dimen>
+    <dimen name="textSizeExplanation">15sp</dimen>
+    <dimen name="maginTopStart">30dp</dimen>
+    <dimen name="marginBetweenLayoutsSpins">400dp</dimen>
 </resources>

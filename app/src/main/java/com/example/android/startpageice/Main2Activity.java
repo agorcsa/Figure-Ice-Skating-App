@@ -9,8 +9,10 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class Main2Activity extends AppCompatActivity implements
-        AdapterView.OnItemSelectedListener {
+import static com.example.android.startpageice.R.id.scoreSkater1;
+import static com.example.android.startpageice.R.id.scoreSkater2;
+
+public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     /**
      * Declaration of the 24 Spinners: 6 Spinners for "Difficulty" and 6 Spinners for the
@@ -46,16 +48,27 @@ public class Main2Activity extends AppCompatActivity implements
     Spinner mGoeAxelSkater1;
     Spinner mGoeAxelSkater2;
 
-    TextView mScoreSkater1;
-    TextView mScoreSkater2;
+    TextView mScoreJumpsSkater1;
+    TextView mScoreJumpsSkater2;
 
     float[] mSkaterScores = {0f, 0f};
+
+    private void initScore() {
+
+        Intent i = getIntent();
+
+        // when we go back from Main3Activity we have those values set:
+        mSkaterScores[0] = i.getFloatExtra("com.example.android.startpageice.Steps1Score", 0);
+        mSkaterScores[1] = i.getFloatExtra("com.example.android.startpageice.Steps2Score", 0);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main2);
+
+        initScore();
 
         /**
          * We search after the 24 spinners and the 2 TextViews (mScoreTeam1 and
@@ -93,8 +106,8 @@ public class Main2Activity extends AppCompatActivity implements
         mGoeLutzSkater2 = (Spinner) findViewById(R.id.goeLutz2);
         mGoeAxelSkater2 = (Spinner) findViewById(R.id.goeAxel2);
 
-        mScoreSkater1 = (TextView) findViewById(R.id.scoreTeam1);
-        mScoreSkater2 = (TextView) findViewById(R.id.scoreTeam2);
+        mScoreJumpsSkater1 = (TextView) findViewById(scoreSkater1);
+        mScoreJumpsSkater2 = (TextView) findViewById(scoreSkater2);
 
 
         /**
@@ -130,6 +143,8 @@ public class Main2Activity extends AppCompatActivity implements
 
     }
 
+
+
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         updateScore();
     }
@@ -144,6 +159,7 @@ public class Main2Activity extends AppCompatActivity implements
         /**
          * Reads the items from the "Difficulty" Spinners for Ice Skater 1.
          */
+
 
         tmp = mToeLoopSkater1.getSelectedItem().toString();
         float toeLoop1 = getToeLoopDeltaScoreFromString(tmp);
@@ -236,6 +252,7 @@ public class Main2Activity extends AppCompatActivity implements
          * The score from the "Grade of Execution" will be added to the score for the
          difficulty of an element.i
          */
+
 
         float score1 = (toeLoop1 + goeToeLoop1) +
                 (salchow1 + goeSalchow1) +
@@ -559,7 +576,7 @@ public class Main2Activity extends AppCompatActivity implements
          */
         mSkaterScores[0] = score1;
         String val = String.format("TOTAL: " + "%.2f " + "points", mSkaterScores[0]);
-        mScoreSkater1.setText(val);
+        mScoreJumpsSkater1.setText(val);
 
     }
 
@@ -570,7 +587,7 @@ public class Main2Activity extends AppCompatActivity implements
          */
         mSkaterScores[1] = score2;
         String val = String.format("TOTAL: " + "%.2f " + "points", mSkaterScores[1]);
-        mScoreSkater2.setText(val);
+        mScoreJumpsSkater2.setText(val);
     }
 
     /**
@@ -596,13 +613,15 @@ public class Main2Activity extends AppCompatActivity implements
         startActivity(intent);
 
     }
-
     /**
      * Restarts the activity every time we press the "start" button.
      */
-    public void startSecondActivity(View view) {
-        Intent mainActivity = new Intent(this, MainActivity.class);
-        startActivity(mainActivity);
+    public void startThirdActivity(View view) {
+        Intent main3Activity = new Intent(this, Main3Activity.class);
+        main3Activity.putExtra("com.example.android.startpageice.Steps1Score", mSkaterScores[0]);
+        main3Activity.putExtra("com.example.android.startpageice.Steps2Score", mSkaterScores[1]);
+
+        startActivity(main3Activity);
     }
 
 }

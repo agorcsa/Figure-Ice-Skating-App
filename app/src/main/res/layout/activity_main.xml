@@ -13,10 +13,8 @@
         android:layout_weight="1.5">
 
         <ImageView
-            android:id="@+id/skaterPicture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/poza" />
+            android:id="@+id/skatersPicture"
+            style="@style/IceSkatersPicture"/>
 
     </LinearLayout>
 
@@ -25,7 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/white"
         android:orientation="vertical">
 
 
@@ -34,25 +31,43 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin">
 
+            <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:fontFamily="cursive"
+             android:gravity="center"
+             android:text="@string/title_start"
+             android:textColor="@color/blue"
+             android:textSize="@dimen/textSizeScore"
+             android:layout_marginTop="@dimen/maginTopStart"/>
+
+
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@color/blue"
+                android:background="@drawable/start_button"
+                android:fontFamily="sans-serif"
                 android:onClick="startSecondActivity"
-                android:text="@string/start" />
+                android:text="@string/start"
+                android:textColor="@color/white" />
 
             <TextView
-                style="@style/explanation"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="@bool/layout_alignParentBottom"
+                android:layout_centerHorizontal="@bool/layout_centerHorizontal"
                 android:layout_marginLeft="@dimen/margin"
                 android:layout_marginRight="@dimen/margin"
+                android:fontFamily="cursive"
                 android:gravity="center"
-                android:text="@string/explanation"
-                android:textSize="@dimen/textSizeTitle" />
+                android:text="@string/hint"
+                android:textColor="@color/start_blue"
+                android:textSize="@dimen/textSizeExplanation"
+                android:textStyle="bold" />
         </RelativeLayout>
 
 

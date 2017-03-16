@@ -9,12 +9,7 @@
     <color name="dark_blue">#0D47A1</color>
     <color name="blue_grey">#B0BEC5</color>
     <color name="light_blue">#0288D1</color>
-    <color name="dark_purple">#AB47BC</color>
-    <color name="dark_lila">#AA00FF</color>
-    <color name="medium_lila">#E040FB</color>
-    <color name="light_lila">#EA80FC</color>
-    <color name="almost_white">#FCE4EC</color>
-    <color name="light_pink">#FF80AB</color>
-    <color name="medium_pink">#FF4081</color>
-    <color name="dark_pink">#C51162</color>
+    <color name="turquoise">#64FFDA</color>
+    <color name="start_blue">#0277BD</color>
+
 </resources>
