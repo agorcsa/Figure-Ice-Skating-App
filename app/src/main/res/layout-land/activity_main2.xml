@@ -6,279 +6,264 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.startpageice.Main2Activity">
 
-    <ImageView style="@style/CustomBackgroundStyle" />
+    <ImageView style="@style/Background" />
 
-    <TextView style="@style/CustomLayoutStyle.CustomTextTitleStyle" />
-
+    <TextView style="@style/Layout.TextTitle" />
 
     <TextView
         android:id="@+id/textView"
-        style="@style/CustomSkaterStyle.CustomSkater1Style" />
+        style="@style/Skater.Skater1" />
 
+    <TextView style="@style/Skater.Skater2" />
 
-    <TextView style="@style/CustomSkaterStyle.CustomSkater2Style" />
-
-
-    <TextView style="@style/CustomScoreTextStyle.CustomScoreText1Style" />
-
+    <TextView style="@style/ScoreText.ScoreText1" />
 
     <TextView
         android:id="@+id/scoreSkater1"
-        style="@style/CustomScoreTextStyle.CustomScoreText1Style" />
-
+        style="@style/ScoreText.ScoreText1" />
 
     <TextView
         android:id="@+id/scoreSkater2"
-        style="@style/CustomScoreTextStyle.CustomScoreText2Style" />
-
+        style="@style/ScoreText.ScoreText2" />
 
     <Button
         android:id="@+id/button_skater1"
-        style="@style/CustomVideoButtonStyle.CustomVideoButton1Style" />
+        style="@style/VideoButton.VideoButton1" />
 
     <Button
         android:id="@+id/button_skater2"
-        style="@style/CustomVideoButtonStyle.CustomVideoButton2Style" />
+        style="@style/VideoButton.VideoButton2" />
 
-    <Button style="@style/CustomVideoButtonStyle.CustomResetButtonStyle" />
+    <Button style="@style/VideoButton.ResetButton" />
 
-    <LinearLayout style="@style/CustomBigTextViewLayoutStyle">
+    <LinearLayout style="@style/BigTextViewLayout">
 
-        <LinearLayout style="@style/CustomHalfTextLayoutStyle.CustomHalf1TextLayoutStyle">
+        <LinearLayout style="@style/HalfTextLayout.Half1TextLayout">
 
 
-            <LinearLayout style="@style/CustomColumnStyle.CustomElementsLayoutStyle">
+            <LinearLayout style="@style/Column.ElementsLayout">
 
-                <TextView style="@style/CustomTitleColumnStyle.CustomTitleElementsStyle" />
+                <TextView style="@style/TitleColumn.TitleElement" />
 
-                <LinearLayout style="@style/CustomLayoutStyle.CustomVerticalLayoutStyle">
+                <LinearLayout style="@style/Layout.VerticalLayout">
 
-                    <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomToeLoopStyle" />
+                    <TextView style="@style/Spinner.JumpTypes.ToeLoop" />
 
-                    <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomSalchowStyle" />
+                    <TextView style="@style/Spinner.JumpTypes.Salchow" />
 
-                    <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomLoopStyle" />
+                    <TextView style="@style/Spinner.JumpTypes.Loop" />
 
-                    <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomFlipStyle" />
+                    <TextView style="@style/Spinner.JumpTypes.Flip" />
 
-                    <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomLutzStyle" />
+                    <TextView style="@style/Spinner.JumpTypes.Lutz" />
 
-                    <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomAxelStyle" />
+                    <TextView style="@style/Spinner.JumpTypes.Axel" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                style="@style/CustomColumnStyle.CustomDifficultyLayoutStyle"
+                style="@style/Column.DifficultyLayout"
                 android:gravity="center">
 
-            <TextView style="@style/CustomTitleColumnStyle.CustomTitleDifficultyStyle" />
+                <TextView style="@style/TitleColumn.TitleDifficulty" />
 
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
-                <Spinner
-                    android:id="@+id/toeloop1"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
+                    <Spinner
+                        android:id="@+id/toeloop1"
+                        style="@style/Spinner.SpinnerDifficulty" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/salchow1"
+                        style="@style/Spinner.SpinnerDifficulty" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/loop1"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/flip1"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/lutz1"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/axel1"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
 
             </LinearLayout>
 
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
+
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
+
+                <TextView style="@style/TitleColumn.TitleGoe" />
 
                 <Spinner
-                    android:id="@+id/salchow1"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
+                    android:id="@+id/goeToeloop1"
+                    style="@style/Spinner.SpinnerGOE" />
 
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
 
                 <Spinner
-                    android:id="@+id/loop1"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
+                    android:id="@+id/goeSalchow1"
+                    style="@style/Spinner.SpinnerGOE" />
 
                 <Spinner
-                    android:id="@+id/flip1"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
+                    android:id="@+id/goeLoop1"
+                    style="@style/Spinner.SpinnerGOE" />
 
                 <Spinner
-                    android:id="@+id/lutz1"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
+                    android:id="@+id/goeFlip1"
+                    style="@style/Spinner.SpinnerGOE" />
 
                 <Spinner
-                    android:id="@+id/axel1"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
+                    android:id="@+id/goeLutz1"
+                    style="@style/Spinner.SpinnerGOE" />
+
+                <Spinner
+                    android:id="@+id/goeAxel1"
+                    style="@style/Spinner.SpinnerGOE" />
+
             </LinearLayout>
 
 
         </LinearLayout>
 
 
-        <LinearLayout style="@style/CustomLayoutStyle.CustomVerticalLayoutStyle.CustomVerticalCenterLayoutStyle">
+        <LinearLayout style="@style/HalfTextLayout.Half2TextLayout">
 
-            <TextView style="@style/CustomTitleColumnStyle.CustomTitleGoeStyle" />
+            <LinearLayout style="@style/Layout.VerticalLayout">
 
-            <Spinner
-                android:id="@+id/goeToeloop1"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
+                <TextView style="@style/TitleColumn.TitleElement" />
+
+                <LinearLayout style="@style/Layout.VerticalLayout">
+
+                    <TextView style="@style/Spinner.JumpTypes.ToeLoop" />
+
+                    <TextView style="@style/Spinner.JumpTypes.Salchow" />
+
+                    <TextView style="@style/Spinner.JumpTypes.Loop" />
+
+                    <TextView style="@style/Spinner.JumpTypes.Flip" />
+
+                    <TextView style="@style/Spinner.JumpTypes.Lutz" />
+
+                    <TextView style="@style/Spinner.JumpTypes.Axel" />
+
+                </LinearLayout>
 
 
-            <Spinner
-                android:id="@+id/goeSalchow1"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
+            </LinearLayout>
 
-            <Spinner
-                android:id="@+id/goeLoop1"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
+            <LinearLayout style="@style/Column.DifficultyLayout">
 
-            <Spinner
-                android:id="@+id/goeFlip1"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
+                <TextView style="@style/TitleColumn.TitleDifficulty" />
 
-            <Spinner
-                android:id="@+id/goeLutz1"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
-            <Spinner
-                android:id="@+id/goeAxel1"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
+                    <Spinner
+                        android:id="@+id/toeloop2"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
 
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/salchow2"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/loop2"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/flip2"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/lutz2"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/axel2"
+                        style="@style/Spinner.SpinnerDifficulty" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
+
+                <TextView style="@style/TitleColumn.TitleGoe" />
+
+                <Spinner
+                    android:id="@+id/goeToeloop2"
+                    style="@style/Spinner.SpinnerGOE" />
+
+                <Spinner
+                    android:id="@+id/goeSalchow2"
+                    style="@style/Spinner.SpinnerGOE" />
+
+                <Spinner
+                    android:id="@+id/goeLoop2"
+                    style="@style/Spinner.SpinnerGOE" />
+
+                <Spinner
+                    android:id="@+id/goeFlip2"
+                    style="@style/Spinner.SpinnerGOE" />
+
+                <Spinner
+                    android:id="@+id/goeLutz2"
+                    style="@style/Spinner.SpinnerGOE" />
+
+                <Spinner
+                    android:id="@+id/goeAxel2"
+                    style="@style/Spinner.SpinnerGOE" />
+            </LinearLayout>
         </LinearLayout>
-
-
     </LinearLayout>
 
 
-    <LinearLayout style="@style/CustomHalfTextLayoutStyle.CustomHalf2TextLayoutStyle">
+    <ImageButton
+        android:id="@+id/nextButton"
+        style="@style/Layout.ImageButton" />
 
-        <LinearLayout style="@style/CustomLayoutStyle.CustomVerticalLayoutStyle">
-
-            <TextView style="@style/CustomTitleColumnStyle.CustomTitleElementsStyle" />
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomVerticalLayoutStyle">
-
-                <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomToeLoopStyle" />
-
-                <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomSalchowStyle" />
-
-                <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomLoopStyle" />
-
-                <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomFlipStyle" />
-
-                <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomLutzStyle" />
-
-                <TextView style="@style/CustomSpinnerStyle.CustomJumpTypesStyle.CustomAxelStyle" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/CustomColumnStyle.CustomDifficultyLayoutStyle">
-
-            <TextView style="@style/CustomTitleColumnStyle.CustomTitleDifficultyStyle" />
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
-
-                <Spinner
-                    android:id="@+id/toeloop2"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
-
-                <Spinner
-                    android:id="@+id/salchow2"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
-
-                <Spinner
-                    android:id="@+id/loop2"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
-
-                <Spinner
-                    android:id="@+id/flip2"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
-
-                <Spinner
-                    android:id="@+id/lutz2"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-
-            <LinearLayout style="@style/CustomLayoutStyle.CustomHorizontalLayoutStyle">
-
-                <Spinner
-                    android:id="@+id/axel2"
-                    style="@style/CustomSpinnerStyle.CustomSpinnerDifficultyStyle" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
-        <LinearLayout style="@style/CustomLayoutStyle.CustomVerticalLayoutStyle.CustomVerticalCenterLayoutStyle">
-
-            <TextView style="@style/CustomTitleColumnStyle.CustomTitleGoeStyle" />
-
-            <Spinner
-                android:id="@+id/goeToeloop2"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
-
-            <Spinner
-                android:id="@+id/goeSalchow2"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
-
-            <Spinner
-                android:id="@+id/goeLoop2"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
-
-            <Spinner
-                android:id="@+id/goeFlip2"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
-
-            <Spinner
-                android:id="@+id/goeLutz2"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
-
-            <Spinner
-                android:id="@+id/goeAxel2"
-                style="@style/CustomSpinnerStyle.CustomSpinnerGOEStyle" />
-        </LinearLayout>
-    </LinearLayout>
-    </LinearLayout>
-
-
-
-   <ImageButton
-       android:layout_marginLeft="10dp"
-       android:id="@+id/nextButton"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:background="@drawable/arrow_right"
-       android:layout_alignParentRight="true"
-       android:layout_marginBottom="@dimen/margin"
-       android:layout_above="@+id/scoreSkater2"
-       android:onClick="startThirdActivity"
-       android:elevation="10dp"/>
-
-    </RelativeLayout>
+</RelativeLayout>
 
