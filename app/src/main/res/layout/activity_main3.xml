@@ -1,376 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/activity_main3"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.example.android.startpageice.Main3Activity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.startpageice.Main3Activity">
 
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0.3"
-            android:background="@drawable/ture"/>
+    <ImageView style="@style/StepsImage" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:fontFamily="cursive"
-            android:text="@string/steps"
-            android:textColor="@color/blue"
-            android:textSize="@dimen/textTitleSize"
-            android:textStyle="bold" />
+    <TextView style="@style/Layout.Title.Steps" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Skater.Skater1" />
 
 
-        <TextView
-            android:id="@+id/textView"
-            style="@style/boldText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginTop="10dp"
-            android:text="@string/skater1" />
+    <TextView style="@style/Skater.Skater2" />
 
 
-        <TextView
-            style="@style/boldText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/marginRight"
-            android:layout_marginTop="10dp"
-            android:text="@string/skater2" />
+    <TextView
+        android:id="@+id/scoreStepsSkater1"
+        style="@style/Layout.ScoreText.ScoreJumps1" />
 
 
-        <TextView
-            android:id="@+id/scoreStepsSkater1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button_pair1"
-            android:layout_marginLeft="@dimen/margin"
-            android:fontFamily="cursive"
-            android:text="@string/score"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/scoreStepsSkater2"
-
-            style="@style/boldText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button_pair2"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/margin"
-            android:fontFamily="cursive"
-            android:text="@string/score"
-            android:textColor="@color/black" />
-
-        <Button
-            android:id="@+id/button_pair1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="@dimen/margin"
-            android:background="@drawable/video_button"
-            android:onClick="videoButton1"
-            android:text="VIDEO REPLAY\nPAIR 1"
-            android:textColor="@color/white"
-            />
-
-        <Button
-            android:id="@+id/button_pair2"
-            style="@style/boldText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_margin="@dimen/margin"
-            android:background="@drawable/video_button"
-            android:onClick="videoButton2"
-            android:src="@drawable/video_button"
-            android:text="@string/button2"
-            android:textColor="@color/white"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin"
-            android:background="@drawable/reset_button"
-            android:fontFamily="sans-serif"
-            android:onClick="resetScore"
-            android:text="@string/reset"
-            android:textColor="@color/white" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/textView">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+    <TextView
+        android:id="@+id/scoreStepsSkater2"
+        style="@style/Layout.ScoreText.ScoreJumps2" />
 
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/margin"
-                    android:orientation="vertical">
+    <Button
+        android:id="@+id/buttonStepsSkater1"
+        style="@style/VideoButton.VideoButton1" />
 
-                    <TextView
-                        style="@style/titleColumn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:text="@string/elements" />
+    <Button
+        android:id="@+id/buttonStepsSkater2"
+        style="@style/VideoButton.VideoButton2" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+    <Button style="@style/VideoButton.ResetButton" />
 
-                        <TextView
-                            style="@style/boldText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:text="@string/steps_sequence" />
+    <LinearLayout style="@style/BigLayout">
 
-                        <TextView
-                            style="@style/boldText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:text="@string/coregraphic_sequence" />
+        <LinearLayout style="@style/HalfLayout.HalfLeftLayout">
 
-                    </LinearLayout>
+
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
+
+                <TextView style="@style/Layout.TitleColumn.TitleElement" />
+
+                <LinearLayout style="@style/Layout.VerticalLayout">
+
+                    <TextView style="@style/Steps.Sq" />
+
+                    <TextView style="@style/Steps.ChoregraphicSq" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/margin"
-                    android:gravity="center"
-                    android:orientation="vertical">
+            </LinearLayout>
 
-                    <TextView
-                        style="@style/titleColumn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:text="@string/difficulty_level" />
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                <TextView style="@style/Layout.TitleColumn.TitleDifficulty" />
 
-                        <Spinner
-                            android:id="@+id/stepsSq1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:entries="@array/difficulty_level"
-                            android:prompt="@string/difficulty" />
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Spinner
-                            android:id="@+id/coreoSq1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:entries="@array/difficulty_choreography"
-                            android:prompt="@string/difficulty_choreo" />
-                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/stepsSq1"
+                        style="@style/StepsSpinnerDifficulty" />
 
                 </LinearLayout>
 
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                    <Spinner
+                        android:id="@+id/coreoSq1"
+                        style="@style/StepsSpinnerDifficulty" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
+
+                <TextView style="@style/Layout.TitleColumn.TitleGoe" />
+
+                <Spinner
+                    android:id="@+id/goeStepsSq1"
+                    style="@style/StepsSpinnerGoe" />
+
+                <Spinner
+                    android:id="@+id/goeCoreoSq1"
+                    style="@style/StepsSpinnerGoe" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/HalfLayout.HalfRightLayout.Steps">
+
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
+
+                <TextView style="@style/Layout.TitleColumn.TitleElement" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
-                        style="@style/titleColumn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:layout_marginLeft="@dimen/marginColumns"
-                        android:text="@string/goe" />
+                    <TextView style="@style/Steps.Sq" />
 
-                    <Spinner
-                        android:id="@+id/goeStepsSq1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:entries="@array/grade_of_execution"
-                        android:prompt="@string/drop_down_list" />
-
-                    <Spinner
-                        android:id="@+id/goeCoreoSq1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:entries="@array/grade_of_execution"
-                        android:prompt="@string/drop_down_list" />
+                    <TextView style="@style/Steps.ChoregraphicSq" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
 
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/marginBetweenLayoutsSteps"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                <TextView style="@style/Layout.TitleColumn.TitleDifficulty" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/titleColumn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:text="@string/elements" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/boldText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:text="@string/steps_sequence" />
-
-                        <TextView
-                            style="@style/boldText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:text="@string/coregraphic_sequence" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/margin"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/titleColumn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:text="@string/difficulty_level" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Spinner
-                            android:id="@+id/stepsSq2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:entries="@array/difficulty_level"
-                            android:prompt="@string/difficulty" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Spinner
-                            android:id="@+id/coreoSq2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:entries="@array/difficulty_choreography"
-                            android:prompt="@string/difficulty_choreo" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/titleColumn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:text="@string/goe" />
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <Spinner
-                        android:id="@+id/goeStepsSq2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:entries="@array/grade_of_execution"
-                        android:prompt="@string/drop_down_list" />
+                        android:id="@+id/stepsSq2"
+                        style="@style/StepsSpinnerDifficulty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <Spinner
-                        android:id="@+id/goeCoreoSq2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:entries="@array/grade_of_execution"
-                        android:prompt="@string/drop_down_list" />
-
+                        android:id="@+id/coreoSq2"
+                        style="@style/StepsSpinnerDifficulty" />
                 </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
+
+                <TextView style="@style/Layout.TitleColumn.TitleGoe" />
+
+                <Spinner
+                    android:id="@+id/goeStepsSq2"
+                    style="@style/StepsSpinnerGoe" />
+
+                <Spinner
+                    android:id="@+id/goeCoreoSq2"
+                    style="@style/StepsSpinnerGoe" />
+
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/nextButtonSteps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/scoreStepsSkater2"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/arrow_right"
-        android:onClick="startForthActivity"/>
+        style="@style/Layout.NextButton.Steps" />
 
     <ImageButton
         android:id="@+id/previewButtonSteps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/scoreStepsSkater1"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/arrow_left"
-        android:onClick="startSecondActivity"/>
+        style="@style/Layout.PreviousButton.Steps" />
 
-    </RelativeLayout>
+</RelativeLayout>

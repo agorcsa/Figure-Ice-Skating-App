@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="dificulty">Choose a  difficulty level</string>
+    <string name="spinner_difficulty">Choose a difficulty level</string>
     <string-array name="difficulty_level">
         <item>0</item>
         <item>1</item>
@@ -11,7 +11,7 @@
         <item>F</item>
     </string-array>
 
-    <string name="drop_down_list">Choose a GOE</string>
+    <string name="spinner_goe">Choose a GOE</string>
     <string-array name="grade_of_execution">
         <item>B</item>
         <item>+3</item>

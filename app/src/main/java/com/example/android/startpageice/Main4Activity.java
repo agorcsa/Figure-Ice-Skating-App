@@ -94,8 +94,8 @@ public class Main4Activity extends AppCompatActivity implements AdapterView.OnIt
         mGoeSitSkater2 = (Spinner) findViewById(R.id.goeSit2);
 
 
-        mScoreSpinsSkater1 = (TextView) findViewById(R.id.scoreSkater1);
-        mScoreSpinsSkater2 = (TextView) findViewById(R.id.scoreSkater2);
+        mScoreSpinsSkater1 = (TextView) findViewById(R.id.scoreSpinsSkater1);
+        mScoreSpinsSkater2 = (TextView) findViewById(R.id.scoreSpinsSkater2);
 
 
         /**
@@ -486,7 +486,6 @@ public class Main4Activity extends AppCompatActivity implements AdapterView.OnIt
      */
 
     public void videoButton1(View view) {
-        Log.d("andre", "in activity 5. starting video1");
         String video_path = "https://www.youtube.com/watch?v=CrVL5tM926s&t=13s";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(video_path));
         startActivity(intent);

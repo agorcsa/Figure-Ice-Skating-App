@@ -9,71 +9,124 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    /**ScoreText2 Background Style */
+
+    // activity_main.xml
+
+    <style name="PhotoLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.5</item>
+    </style>
+
+    <style name="IceSkatersImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/iceskaters</item>
+    </style>
+
+    <style name="TextLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/marginM</item>
+    </style>
+
+    <style name="Layout.AppName">
+        <item name="android:text">@string/title_start</item>
+        <item name="android:textSize">@dimen/textSizeApp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">@bool/layout_centerHorizontal</item>
+        <item name="android:layout_marginTop">@dimen/maginTopStart</item>
+    </style>
+
+    <style name="Layout.StartButton">
+        <item name="android:text">@string/start</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@drawable/start_button</item>
+        <item name="android:onClick">startSecondActivity</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Layout.Hint">
+        <item name="android:text">@string/hint</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textSizeHint</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">@bool/layout_centerHorizontal</item>
+        <item name="android:layout_alignParentBottom">@bool/layout_alignParentBottom</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+        <item name="android:layout_marginRight">@dimen/marginM</item>
+    </style>
+
+
+    // activity_main2.xml
 
     <style name="Background">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/jumps</item>
         <item name="android:alpha">0.3</item>
-        <item name="android:contentDescription">@string/jumps_image</item>
     </style>
 
-    /** ScoreText2 Text Title Style */
-
-    <style name="Layout.TextTitle">
+    <style name="Layout.Title">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/blue</item>
-        <item name="android:text">@string/title</item>
-        <item name="android:textSize">@dimen/textTitleSize</item>
+        <item name="android:textSize">@dimen/textSizeTitle</item>
         <item name="android:capitalize">characters</item>
         <item name="android:fontFamily">cursive</item>
         <item name="android:layout_alignParentTop">@bool/layout_alignParentTop</item>
         <item name="android:layout_centerHorizontal">@bool/layout_centerHorizontal</item>
-        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginTop">@dimen/marginM</item>
     </style>
 
-    <style name="BigTextViewLayout">
+    <style name="Layout.Title.Jumps">
+        <item name="android:text">@string/jumps</item>
+    </style>
+
+
+    <style name="BigLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:baselineAligned">false</item>
         <item name="android:layout_alignParentStart">@bool/layout_alignParentStart</item>
         <item name="android:layout_alignTop">@+id/textView</item>
+        <item name="android:layout_marginTop">@dimen/marginTopLayout</item>
     </style>
 
-    /**ScoreText2 Half Text Layout Style */
-
-    <style name="HalfTextLayout">
+    <style name="HalfLayout">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:layout_marginTop">@dimen/marginTop</item>
     </style>
 
-    <style name="HalfTextLayout.Half1TextLayout"></style>
+    <style name="HalfLayout.HalfLeftLayout"></style>
 
-    <style name="HalfTextLayout.Half2TextLayout">
-        <item name="android:layout_marginStart">@dimen/marginBetweenLayouts</item>
+    <style name="HalfLayout.HalfRightLayout"></style>
+
+    <style name="HalfLayout.HalfRightLayout.Jumps">
+        <item name="android:layout_marginLeft">@dimen/marginBetweenLayoutsJumps</item>
     </style>
 
-    /**CustomColumnStyle */
-
-    <style name="Column">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">vertical</item>
+    <style name="HalfLayout.HalfRightLayout.Steps">
+        <item name="android:layout_marginLeft">@dimen/marginBetweenLayoutsSteps</item>
     </style>
 
-    <style name="Column.ElementsLayout">
-        <item name="android:layout_marginStart">@dimen/margin</item>
+    <style name="HalfLayout.HalfRightLayout.Spins">
+        <item name="android:layout_marginLeft">@dimen/marginBetweenLayoutsSpins</item>
+        <item name="android:layout_marginTop">@dimen/marginL</item>
     </style>
-
-    <style name="Column.DifficultyLayout">
-        <item name="android:layout_marginLeft">@dimen/margin</item>
-    </style>
-
-    /**ScoreText2 Layout Style */
 
     <style name="Layout">
         <item name="android:layout_width">wrap_content</item>
@@ -88,11 +141,26 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+
     <style name="Layout.VerticalLayout.VerticalCenterLayout">
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+    </style>
+
+    <style name="Layout.Column">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
         <item name="android:gravity">center</item>
     </style>
 
-    /** ScoreText2 Spinner Style */
+    <style name="Layout.Column.Elements">
+        <item name="android:layout_marginStart">@dimen/marginM</item>
+    </style>
+
+    <style name="Layout.Column.Difficulty">
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 
     <style name="Spinner">
         <item name="android:layout_width">wrap_content</item>
@@ -106,33 +174,34 @@
 
     <style name="Spinner.SpinnerGOE">
         <item name="android:entries">@array/grade_of_execution</item>
-        <item name="android:prompt">@string/drop_down_list</item>
+        <item name="android:prompt">@string/goe</item>
     </style>
 
-    /**TitleColumn */
 
-    <style name="TitleColumn">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="Layout.TitleColumn">
         <item name="android:textStyle">bold</item>
         <item name="android:capitalize">characters</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    <style name="TitleColumn.TitleElement">
+    <style name="Layout.TitleColumn.Score">
+        <item name="android:text">@string/score</item>
+    </style>
+
+    <style name="Layout.TitleColumn.TitleElement">
         <item name="android:text">@string/elements</item>
     </style>
 
-    <style name="TitleColumn.TitleDifficulty">
+    <style name="Layout.TitleColumn.TitleDifficulty">
         <item name="android:text">@string/difficulty</item>
     </style>
 
-    <style name="TitleColumn.TitleGoe">
+    <style name="Layout.TitleColumn.TitleGoe">
         <item name="android:text">@string/goe</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
-    /**ScoreText2 Skater Style */
 
     <style name="Skater">
         <item name="android:layout_width">wrap_content</item>
@@ -140,46 +209,52 @@
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textColor">@color/blue</item>
-        <item name="android:layout_marginTop">@dimen/marginTop</item>
-        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginTop">@dimen/marginL</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
         <item name="android:layout_marginRight">@dimen/marginRight</item>
     </style>
 
     <style name="Skater.Skater1">
-        <item name="android:text">@string/skater_1</item>
+        <item name="android:text">@string/skater1</item>
     </style>
 
     <style name="Skater.Skater2">
-        <item name="android:text">@string/skater_2</item>
+        <item name="android:text">@string/skater2</item>
         <item name="android:layout_alignParentRight">@bool/layout_alignParentRight</item>
     </style>
 
-    /**ScoreText2 ScoreText2 Score Text Style */
 
-    <style name="ScoreText">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="Layout.ScoreText">
+        <item name="android:text">@string/score</item>
         <item name="android:textSize">@dimen/textSizeScore</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">cursive</item>
-        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_alignParentBottom">@bool/layout_alignParentBottom</item>
+        <item name="android:layout_marginBottom">50dp</item>
     </style>
 
-    <style name="ScoreText.ScoreText1">
-
-        <item name="android:layout_above">@+id/button_skater1</item>
-        <item name="android:layout_marginLeft">@dimen/margin</item>
+    <style name="Layout.ScoreText.ScoreJumps1">
+        <item name="android:layout_above">@id/buttonJumpsSkater1</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
     </style>
 
-    <style name="ScoreText.ScoreText2">
-
-        <item name="android:layout_above">@+id/button_skater2</item>
-        <item name="android:layout_marginRight">@dimen/margin</item>
+    <style name="Layout.ScoreText.ScoreJumps2">
+        <item name="android:layout_above">@id/buttonJumpsSkater2</item>
+        <item name="android:layout_marginRight">@dimen/marginM</item>
         <item name="android:layout_alignParentRight">@bool/layout_alignParentRight</item>
     </style>
 
-    /**ScoreText2 Video Button Style */
+    <style name="Layout.ScoreText.ScoreFinal1">
+        <item name="android:layout_above">@id/buttonJumpsSkater1</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+    </style>
+
+    <style name="Layout.ScoreText.ScoreFinal2">
+        <item name="android:layout_above">@id/buttonJumpsSkater2</item>
+        <item name="android:layout_marginRight">@dimen/marginM</item>
+        <item name="android:layout_alignParentRight">@bool/layout_alignParentRight</item>
+    </style>
 
     <style name="VideoButton">
         <item name="android:textColor">@color/white</item>
@@ -206,9 +281,9 @@
         <item name="android:text">@string/reset</item>
         <item name="android:background">@drawable/reset_button_jumps</item>
         <item name="android:layout_centerHorizontal">@bool/layout_centerHorizontal</item>
+        <item name="android:onClick">resetScore</item>
     </style>
 
-    /** ScoreText2 Jump Types Style */
 
     <style name="Spinner.JumpTypes">
         <item name="android:textColor">@color/blue</item>
@@ -241,19 +316,117 @@
         <item name="android:text">@string/axel</item>
     </style>
 
-    <style name="boldText">
+
+    //activity_main3.xml
+
+    <style name="Layout.Title.Steps">
+        <item name="android:text">@string/steps</item>
+    </style>
+
+    <style name="StepsImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/ture</item>
+        <item name="alpha">0.3</item>
+    </style>
+
+    <style name="Steps">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/blue</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    <style name="boldTextSteps">
+    <style name="Steps.Sq">
+        <item name="android:text">@string/steps_sequence</item>
+    </style>
+
+    <style name="Steps.ChoregraphicSq">
+        <item name="android:text">@string/choregraphic_sequence</item>
+    </style>
+
+    <style name="StepsSpinnerDifficulty">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:entries">@array/difficulty_level</item>
+        <item name="android:prompt">@string/difficulty</item>
+    </style>
+
+    <style name="StepsSpinnerGoe">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:entries">@array/grade_of_execution</item>
+        <item name="android:prompt">@string/goe</item>
+    </style>
+
+
+    <style name="Layout.NextButton">
+        <item name="android:background">@drawable/arrow_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">@bool/layout_alignParentBottom</item>
+        <item name="android:layout_marginBottom">65dp</item>
+        <item name="android:layout_marginRight">@dimen/marginM</item>
+    </style>
+
+    <style name="Layout.NextButton.Jumps">
+        <item name="android:onClick">startThirdActivity</item>
+    </style>
+
+    <style name="Layout.NextButton.Steps">
+        <item name="android:onClick">startForthActivity</item>
+    </style>
+
+    <style name="Layout.PreviousButton">
+        <item name="android:background">@drawable/arrow_left</item>
+        <item name="android:layout_above">@+id/scoreStepsSkater1</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+        <item name="android:layout_alignParentBottom">@bool/layout_alignParentBottom</item>
+        <item name="android:layout_marginBottom">65dp</item>
+    </style>
+
+
+    <style name="Layout.PreviousButton.Steps">
+        <item name="android:onClick">startSecondActivity</item>
+    </style>
+
+
+    activity_main4.xml
+
+    <style name="ImageSpins">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/spins</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+    <style name="Layout.Title.Spins">
+        <item name="android:text">@string/spins</item>
+    </style>
+
+    <style name="SpinnerSpins">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:entries">@array/difficulty_level</item>
+        <item name="android:prompt">@string/difficulty</item>
+    </style>
+
+    <style name="SpinnerSpinsGoe">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:entries">@array/grade_of_execution</item>
+        <item name="android:prompt">@string/goe</item>
+    </style>
+
+
+    <style name="boldText">
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/blue</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
-
 
     <style name="titleColumn">
         <item name="android:textStyle">bold</item>
@@ -261,23 +434,109 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    //activity_main.xml styles
-    
-    <style name="IceSkatersPicture">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/iceskaters</item>
-    </style>
-
     <style name="Layout.ImageButton">
         <item name="android:layout_above">@+id/scoreSkater2</item>
         <item name="android:layout_alignParentRight">@bool/layout_alignParentRight</item>
-        <item name="android:layout_marginBottom">@dimen/margin</item>
-        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/marginM</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
         <item name="android:background">@drawable/arrow_right</item>
         <item name="android:onClick">startThirdActivity</item>
     </style>
 
+    <style name="Layout.PreviousButton.Spins">
+        <item name="android:onClick">startThirdActivity</item>
+    </style>
+
+    <style name="Layout.NextButton.Spins">
+        <item name="android:onClick">startSixthActivity</item>
+    </style>
+
+
+    //activity_main6
+
+    <style name="PodiumImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/blue</item>
+    </style>
+
+    <style name="TextCell">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextCell.Jumps">
+        <item name="android:text">@string/jumps</item>
+    </style>
+
+    <style name="TextCell.Steps">
+        <item name="android:text">@string/steps</item>
+    </style>
+
+    <style name="TextCell.Spins">
+        <item name="android:text">@string/spins</item>
+    </style>
+
+    <style name="TextCell.Upright">
+        <item name="android:text">@string/upright</item>
+    </style>
+
+    <style name="TextCell.Layback">
+        <item name="android:text">@string/layback</item>
+    </style>
+
+    <style name="TextCell.Camel">
+        <item name="android:text">@string/camel</item>
+    </style>
+
+    <style name="TextCell.Sit">
+        <item name="android:text">@string/sit</item>
+    </style>
+
+    <style name="ScoreCell">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Layout.Title.FinalScore">
+        <item name="android:text">@string/finalScore</item>
+    </style>
+
+    <style name="EqualParts">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout.ScoreFinal1">
+        <item name="android:textSize">@dimen/textSizeTitle</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:layout_alignParentBottom">@bool/layout_alignParentBottom</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+    </style>
+
+    <style name="Layout.ScoreFinal2">
+        <item name="android:textSize">@dimen/textSizeTitle</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:layout_alignParentBottom">@bool/layout_alignParentBottom</item>
+        <item name="android:layout_alignParentRight">@bool/layout_alignParentRight</item>
+        <item name="android:layout_marginRight">@dimen/marginM</item>
+    </style>
+
 </resources>
+
+
+
 
 

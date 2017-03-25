@@ -3,9 +3,9 @@
 
     <bool name="layout_alignParentTop">true</bool>
     <bool name="layout_alignParentBottom">true</bool>
-    <bool name="layout_centerHorizontal">true</bool>
-    <bool name="layout_alignParentRight">true</bool>
     <bool name="layout_alignParentStart">true</bool>
+    <bool name="layout_alignParentRight">true</bool>
+    <bool name="layout_centerHorizontal">true</bool>
     <bool name="layout_centerInParent">true</bool>
 
 </resources>

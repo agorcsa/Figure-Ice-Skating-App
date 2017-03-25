@@ -8,48 +8,41 @@
 
     <ImageView style="@style/Background" />
 
-    <TextView style="@style/Layout.TextTitle" />
-
+    <TextView style="@style/Layout.Title.Jumps" />
 
     <TextView
         android:id="@+id/textView"
         style="@style/Skater.Skater1" />
 
-
     <TextView style="@style/Skater.Skater2" />
 
-
-    <TextView style="@style/ScoreText.ScoreText1" />
-
+    <TextView style="@style/Layout.ScoreText.ScoreJumps1" />
 
     <TextView
         android:id="@+id/scoreSkater1"
-        style="@style/ScoreText.ScoreText1" />
-
+        style="@style/Layout.ScoreText.ScoreJumps1" />
 
     <TextView
         android:id="@+id/scoreSkater2"
-        style="@style/ScoreText.ScoreText2" />
-
+        style="@style/Layout.ScoreText.ScoreJumps2" />
 
     <Button
-        android:id="@+id/button_skater1"
+        android:id="@+id/buttonJumpsSkater1"
         style="@style/VideoButton.VideoButton1" />
 
     <Button
-        android:id="@+id/button_skater2"
+        android:id="@+id/buttonJumpsSkater2"
         style="@style/VideoButton.VideoButton2" />
 
     <Button style="@style/VideoButton.ResetButton" />
 
-    <LinearLayout style="@style/BigTextViewLayout">
+    <LinearLayout style="@style/BigLayout">
 
-        <LinearLayout style="@style/HalfTextLayout.Half1TextLayout">
+        <LinearLayout style="@style/HalfLayout.HalfLeftLayout">
 
+            <LinearLayout style="@style/Layout.Column.Elements">
 
-            <LinearLayout style="@style/Column.ElementsLayout">
-
-                <TextView style="@style/TitleColumn.TitleElement" />
+                <TextView style="@style/Layout.TitleColumn.TitleElement" />
 
                 <LinearLayout style="@style/Layout.VerticalLayout">
 
@@ -69,11 +62,9 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/Column.DifficultyLayout"
-                android:gravity="center">
+            <LinearLayout style="@style/Layout.Column.Difficulty">
 
-                <TextView style="@style/TitleColumn.TitleDifficulty" />
+                <TextView style="@style/Layout.TitleColumn.TitleDifficulty" />
 
                 <LinearLayout style="@style/Layout.HorizontalLayout">
 
@@ -126,7 +117,7 @@
 
             <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
 
-                <TextView style="@style/TitleColumn.TitleGoe" />
+                <TextView style="@style/Layout.TitleColumn.TitleGoe" />
 
                 <Spinner
                     android:id="@+id/goeToeloop1"
@@ -159,11 +150,11 @@
         </LinearLayout>
 
 
-        <LinearLayout style="@style/HalfTextLayout.Half2TextLayout">
+        <LinearLayout style="@style/HalfLayout.HalfRightLayout.Jumps">
 
             <LinearLayout style="@style/Layout.VerticalLayout">
 
-                <TextView style="@style/TitleColumn.TitleElement" />
+                <TextView style="@style/Layout.TitleColumn.TitleElement" />
 
                 <LinearLayout style="@style/Layout.VerticalLayout">
 
@@ -184,9 +175,9 @@
 
             </LinearLayout>
 
-            <LinearLayout style="@style/Column.DifficultyLayout">
+            <LinearLayout style="@style/Layout.Column.Difficulty">
 
-                <TextView style="@style/TitleColumn.TitleDifficulty" />
+                <TextView style="@style/Layout.TitleColumn.TitleDifficulty" />
 
                 <LinearLayout style="@style/Layout.HorizontalLayout">
 
@@ -237,7 +228,7 @@
 
             <LinearLayout style="@style/Layout.VerticalLayout.VerticalCenterLayout">
 
-                <TextView style="@style/TitleColumn.TitleGoe" />
+                <TextView style="@style/Layout.TitleColumn.TitleGoe" />
 
                 <Spinner
                     android:id="@+id/goeToeloop2"
@@ -269,15 +260,7 @@
 
     <ImageButton
         android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/scoreSkater2"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/arrow_right"
-        android:elevation="10dp"
-        android:onClick="startThirdActivity" />
+        style="@style/Layout.NextButton.Jumps" />
 
 </RelativeLayout>
 

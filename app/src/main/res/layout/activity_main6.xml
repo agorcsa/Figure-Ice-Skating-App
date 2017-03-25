@@ -7,155 +7,70 @@
     tools:context="com.example.android.startpageice.Main6Activity">
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/blue" />
+    <ImageView style="@style/PodiumImage" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:fontFamily="cursive"
-        android:text="@string/tableTitle"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/textTitleSize"
-        android:textStyle="bold" />
+    <TextView style="@style/Layout.Title.FinalScore" />
 
 
     <TextView
         android:id="@+id/textView"
-        style="@style/boldText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin"
-        android:layout_marginTop="20dp"
-        android:text="@string/skater1" />
+        style="@style/Skater.Skater1" />
+
+    <TextView style="@style/Skater.Skater2" />
 
 
-    <TextView
-        style="@style/boldText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="@dimen/margin"
-        android:layout_marginRight="@dimen/marginRight"
-        android:layout_marginTop="20dp"
-        android:text="@string/skater2" />
+    <LinearLayout style="@style/BigLayout">
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/textView"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
+        <LinearLayout style="@style/EqualParts">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin"
-                android:orientation="vertical">
+                style="@style/Layout.VerticalLayout"
+                android:layout_marginLeft="@dimen/marginM">
 
-                <TextView
-                    style="@style/titleColumn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/elements" />
+                <TextView style="@style/Layout.TitleColumn.TitleElement" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/Layout.VerticalLayout">
 
-                    <TextView
-                        style="@style/boldText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:text="@string/title" />
+                    <TextView style="@style/TextCell.Jumps" />
 
-                    <TextView
-                        style="@style/boldText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:text="@string/steps" />
+                    <TextView style="@style/TextCell.Steps" />
 
-                    <TextView
-                        style="@style/boldText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:text="@string/spins" />
+                    <TextView style="@style/TextCell.Spins" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin"
-                android:gravity="center"
-                android:orientation="vertical">
+            <LinearLayout style="@style/Layout.Column">
 
-                <TextView
-                    style="@style/titleColumn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin"
-                    android:text="@string/score" />
+                <TextView style="@style/Layout.TitleColumn.Score" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <TextView
                         android:id="@+id/jumpsTotal1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:textColor="@color/black"/>
+                        style="@style/ScoreCell" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <TextView
                         android:id="@+id/stepsTotal1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp" />
+                        style="@style/ScoreCell" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <TextView
                         android:id="@+id/spinsTotal1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp" />
+                        style="@style/ScoreCell" />
 
                 </LinearLayout>
 
@@ -165,45 +80,20 @@
 
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/marginBetweenLayoutsSpins"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            style="@style/EqualParts"
+            android:layout_marginLeft="@dimen/marginBetweenLayoutsTechnical">>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <LinearLayout style="@style/Layout.VerticalLayout">
 
-                <TextView
-                    style="@style/titleColumn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/elements" />
+                <TextView style="@style/Layout.TitleColumn.TitleElement" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/Layout.VerticalLayout">
 
-                    <TextView
-                        style="@style/boldText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:text="@string/title" />
+                    <TextView style="@style/TextCell.Jumps" />
 
-                    <TextView
-                        style="@style/boldText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:text="@string/steps" />
+                    <TextView style="@style/TextCell.Steps" />
 
-                    <TextView
-                        style="@style/boldText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:text="@string/spins" />
+                    <TextView style="@style/TextCell.Spins" />
 
                 </LinearLayout>
 
@@ -211,61 +101,51 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin"
-                android:gravity="center"
-                android:orientation="vertical">
+                style="@style/Layout.VerticalLayout"
+                android:layout_marginLeft="@dimen/marginM">
 
-                <TextView
-                    style="@style/titleColumn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/score" />
+                <TextView style="@style/Layout.TitleColumn.Score" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <TextView
                         android:id="@+id/jumpsTotal2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp" />
+                        style="@style/ScoreCell" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <TextView
                         android:id="@+id/stepsTotal2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp" />
+                        style="@style/ScoreCell" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/Layout.HorizontalLayout">
 
                     <TextView
                         android:id="@+id/spinsTotal2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp" />
+                        style="@style/ScoreCell" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"></LinearLayout>
+                <LinearLayout style="@style/Layout.HorizontalLayout">
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreFinalSkater1"
+        style="@style/Layout.ScoreFinal1" />
+
+
+    <TextView
+        android:id="@+id/scoreFinalSkater2"
+        style="@style/Layout.ScoreFinal2" />
+
 </RelativeLayout>
 
 

@@ -8,7 +8,6 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +22,5 @@ public class MainActivity extends AppCompatActivity {
         Intent main2Activity = new Intent(this, Main2Activity.class);
         startActivity(main2Activity);
     }
-
 
 }

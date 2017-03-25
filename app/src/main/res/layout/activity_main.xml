@@ -4,72 +4,26 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:labelFor="@id/activity_main"
     android:orientation="vertical"
     tools:context="com.example.android.startpageice.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5">
+    <LinearLayout style="@style/PhotoLayout">
 
-        <ImageView
-            android:id="@+id/skatersPicture"
-            style="@style/IceSkatersPicture"/>
+        <ImageView style="@style/IceSkatersImage" />
 
     </LinearLayout>
 
+    <LinearLayout style="@style/TextLayout">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        <RelativeLayout style="@style/RelativeLayout">
 
+            <TextView style="@style/Layout.AppName" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin">
+            <Button style="@style/Layout.StartButton" />
 
-            <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_centerHorizontal="true"
-             android:fontFamily="cursive"
-             android:gravity="center"
-             android:text="@string/title_start"
-             android:textColor="@color/blue"
-             android:textSize="@dimen/textSizeScore"
-             android:layout_marginTop="@dimen/maginTopStart"/>
-
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/start_button"
-                android:fontFamily="sans-serif"
-                android:onClick="startSecondActivity"
-                android:text="@string/start"
-                android:textColor="@color/white" />
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="@bool/layout_alignParentBottom"
-                android:layout_centerHorizontal="@bool/layout_centerHorizontal"
-                android:layout_marginLeft="@dimen/margin"
-                android:layout_marginRight="@dimen/margin"
-                android:fontFamily="cursive"
-                android:gravity="center"
-                android:text="@string/hint"
-                android:textColor="@color/start_blue"
-                android:textSize="@dimen/textSizeExplanation"
-                android:textStyle="bold" />
+            <TextView style="@style/Layout.Hint" />
         </RelativeLayout>
-
 
     </LinearLayout>
 

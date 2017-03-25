@@ -36,7 +36,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
         mScore1Steps = i.getFloatExtra("com.example.android.startpageice.Steps1Score", 0);
         mScore2Steps = i.getFloatExtra("com.example.android.startpageice.Steps2Score", 0);
 
-        // when we go back from Main5Activity we have those values set:
         mSkaterScores[0] = i.getFloatExtra("com.example.android.startpageice.Jumps1Score", 0);
         mSkaterScores[1] = i.getFloatExtra("com.example.android.startpageice.Jumps2Score", 0);
     }
@@ -49,13 +48,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
         initStepsScore();
 
-        /**
-         * We search after the spinners and the 2 TextViews (mScoreTeam1 and
-         mScoreTeam2)
-         * in the activity_main.xml (user interface) and identify them after their id.
-         * (actually, we link the class members of the "MainActivity" from the Java code
-         with the Spinner buttons from the activity_main.xml).
-         */
 
         mStepsSqSkater1 = (Spinner) findViewById(R.id.stepsSq1);
         mCoreoSqSkater1 = (Spinner) findViewById(R.id.coreoSq1);
@@ -92,11 +84,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
     private void updateScore() {
         String tmp;
 
-        /**
-         * Reads the items from the "Difficulty" Spinners for Ice Skater 1.
-         */
-
-
 
         tmp = mStepsSqSkater1.getSelectedItem().toString();
         float stepsSq1 = getStepsSqDeltaScoreFromString(tmp);
@@ -104,9 +91,7 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
         tmp = mCoreoSqSkater1.getSelectedItem().toString();
         float coreoSq1 = getCoreoSqDeltaScoreFromString(tmp);
 
-        /**
-         * Reads the items from the "Difficulty" Spinners for Ice Skater 2.
-         */
+
 
         tmp = mStepsSqSkater2.getSelectedItem().toString();
         float stepsSq2 = getStepsSqDeltaScoreFromString(tmp);
@@ -115,9 +100,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
         float coreoSq2 = getCoreoSqDeltaScoreFromString(tmp);
 
 
-        /**
-         * Reads the items from the "GOE" Spinners for Ice Skater 1.
-         */
 
         tmp = mGoeStepsSqSkater1.getSelectedItem().toString();
         float goeStepsSq1 = getGoeStepsSqDeltaScoreFromString(tmp);
@@ -126,9 +108,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
         float goeCoreoSq1 = getGoeCoreoSqDeltaScoreFromString(tmp);
 
 
-        /**
-         * Reads the items from the "GOE" Spinners for Ice Skater 2.
-         */
 
         tmp = mGoeStepsSqSkater2.getSelectedItem().toString();
         float goeStepsSq2 = getGoeStepsSqDeltaScoreFromString(tmp);
@@ -137,25 +116,12 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
         float goeCoreoSq2 = getGoeCoreoSqDeltaScoreFromString(tmp);
 
 
-        /**
-         * Calculates the score for Ice Skater 1).
-         * The score from the "Grade of Execution" will be added to the score for the
-         difficulty of an element.i
-         */
 
         float score1 = (stepsSq1 + goeStepsSq1) +  (coreoSq1 + goeCoreoSq1);
 
-        /**
-         * Calculates the score for Ice Skater 2).
-         * The score from the "Grade of Execution" will be added to the score for the
-         difficulty of an element.
-         */
 
         float score2 = (stepsSq2 + goeStepsSq2) +  (coreoSq2 + goeCoreoSq2);
 
-        /**
-         * Display the score for Ice Skater 1 and 2.
-         */
 
         displayForSkater1(score1);
         displayForSkater2(score2);
@@ -163,9 +129,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
 
     private float getDeltaScoreFromStringStepsSq(String str) {
-        /**
-         * float[] deltas = {0f, 0.4f, 1.3f, 4.1f, 10.3f, -1f}; (for ToeLoop)
-         */
 
         if (str.equals("0"))
             return 0f;
@@ -187,18 +150,11 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
         return -1f;
 
-        /**
-         * When the skater doesn't perform his element, but falls, a penalty of 1 point is
-         being reduced from the skater's score).
-         * This is being applied when from the spinner the value "F" is being selected.
-         */
+
     }
 
     private float getDeltaScoreFromStringCoreo(String str) {
 
-        /**
-         * float[] deltas = {0f, 0.4f, 1.3f, 4.2f, 10.5f, -1f}; (for Salchow)
-         */
 
         if (str.equals("0"))
             return 0f;
@@ -213,15 +169,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
     private float getGenericGoeDeltaScoreFromString(String str) {
 
-        /**
-         * gets the real value of each string-array of the spinner "Grade of Execution
-         (GOE)".
-         * The values are (-0.9, -0.6, -0.3, 0, 0.5, 1, 1.5).
-         * "B" represents the base, also the basic score from which an element starts
-         judged.
-         * The value of "B" is 0, because there are no deviation from score that we have
-         selected in the "difficulty" spinner.
-         */
 
         if (str.equals("-3"))
             return -0.9f;
@@ -263,13 +210,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
         return getGenericGoeDeltaScoreFromString(str);
     }
 
-
-    /**
-     * The method is empty because there is no action to perform here.
-     * In the spinners there will be always something selected.
-     * The method is still exists, because it's part of the OnItemSelectedListener.
-     */
-
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
@@ -292,9 +232,7 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
     public void displayForSkater1(float score1) {
 
-        /**
-         * formatting string with two decimals and display it
-         */
+
         mSkaterScores[0] = score1;
         String val = String.format("TOTAL: " + "%.2f " + "points", mSkaterScores[0]);
         mScoreStepsSkater1.setText(val);
@@ -303,9 +241,7 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
     public void displayForSkater2(float score2) {
 
-        /**
-         * formatting string with two decimals and display it
-         */
+
         mSkaterScores[1] = score2;
         String val = String.format("TOTAL: " + "%.2f " + "points", mSkaterScores[1]);
         mScoreStepsSkater2.setText(val);
@@ -319,10 +255,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
 
     }
 
-    /**
-     * New intent for the right-bottom button of the screen, which makes connection to a
-     * video o youtube.
-     */
 
     public void videoButton2(View view) {
         String video_path = "https://www.youtube.com/watch?v=hgXKJvTVW9g&t=36s";
@@ -334,8 +266,7 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
     public void startSecondActivity(View view) {
         Intent main2Activity = new Intent(this, Main2Activity.class);
 
-        // When we go back we want to preserve the old values.
-        // We have created a new intent Main3Activity, let's restore saved values to it:
+
         main2Activity.putExtra("com.example.android.startpageice.Steps1Score", mScore1Steps);
         main2Activity.putExtra("com.example.android.startpageice.Steps2Score", mScore2Steps);
 
@@ -343,15 +274,15 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
     }
 
     public void startForthActivity(View view) {
-        Intent main5Activity = new Intent(this, Main4Activity.class);
+        Intent main4Activity = new Intent(this, Main4Activity.class);
 
-        main5Activity.putExtra("com.example.android.startpageice.Steps1Score", mScore1Steps);
-        main5Activity.putExtra("com.example.android.startpageice.Steps2Score", mScore2Steps);
-        main5Activity.putExtra("com.example.android.startpageice.Jumps1Score", mSkaterScores[0]);
-        main5Activity.putExtra("com.example.android.startpageice.Jumps2Score", mSkaterScores[1]);
+        main4Activity.putExtra("com.example.android.startpageice.Steps1Score", mScore1Steps);
+        main4Activity.putExtra("com.example.android.startpageice.Steps2Score", mScore2Steps);
+        main4Activity.putExtra("com.example.android.startpageice.Jumps1Score", mSkaterScores[0]);
+        main4Activity.putExtra("com.example.android.startpageice.Jumps2Score", mSkaterScores[1]);
 
-        Log.d("andre", "starting 5");
-        startActivity(main5Activity);
+        Log.d("andre", "starting 4");
+        startActivity(main4Activity);
     }
 
 }

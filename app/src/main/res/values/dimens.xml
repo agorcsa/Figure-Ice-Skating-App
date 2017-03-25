@@ -1,20 +1,23 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
     <dimen name="textSizeTitle">18sp</dimen>
+    <dimen name="textSizeStart">25sp</dimen>
+    <dimen name="textSizeApp">35sp</dimen>
     <dimen name="textSizeScore">15sp</dimen>
-    <dimen name="margin">10dp</dimen>
-    <dimen name="marginColumns">5dp</dimen>
-    <dimen name="marginTop">15dp</dimen>
+    <dimen name="textSizeHint">15sp</dimen>
+
+    <dimen name="marginS">5dp</dimen>
+    <dimen name="marginM">10dp</dimen>
+    <dimen name="marginL">15dp</dimen>
+
+    <dimen name="marginBottom">25dp</dimen>
     <dimen name="marginRight">15dp</dimen>
     <dimen name="marginTopLayout">20dp</dimen>
-    <dimen name="marginBottom">25dp</dimen>
-    <dimen name="marginBetweenLayouts">160dp</dimen>
-    <dimen name="marginBetweenLayoutsSteps">160dp</dimen>
-    <dimen name="textTitleSize">18dp</dimen>
-    <dimen name="textSizeStart">25sp</dimen>
-    <dimen name="textSizeExplanation">15sp</dimen>
     <dimen name="maginTopStart">30dp</dimen>
-    <dimen name="marginBetweenLayoutsSpins">400dp</dimen>
+
+    <dimen name="marginBetweenLayoutsJumps">140dp</dimen>
+    <dimen name="marginBetweenLayoutsSteps">45dp</dimen>
+    <dimen name="marginBetweenLayoutsSpins">150dp</dimen>
+    <dimen name="marginBetweenLayoutsTechnical">300dp</dimen>
+
 </resources>
