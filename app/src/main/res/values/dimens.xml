@@ -15,9 +15,9 @@
     <dimen name="marginTopLayout">20dp</dimen>
     <dimen name="maginTopStart">30dp</dimen>
 
-    <dimen name="marginBetweenLayoutsJumps">140dp</dimen>
+    <dimen name="marginBetweenLayoutsJumps">130dp</dimen>
     <dimen name="marginBetweenLayoutsSteps">45dp</dimen>
-    <dimen name="marginBetweenLayoutsSpins">150dp</dimen>
+    <dimen name="marginBetweenLayoutsSpins">120dp</dimen>
     <dimen name="marginBetweenLayoutsTechnical">300dp</dimen>
 
 </resources>
