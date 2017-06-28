@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:labelFor="@id/activity_main"
     android:orientation="vertical"
-    tools:context="com.example.android.startpageice.MainActivity">
+    tools:context="com.example.android.startpageice.Main1Activity">
 
     <LinearLayout style="@style/PhotoLayout">
 
