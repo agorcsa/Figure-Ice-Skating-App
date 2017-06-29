@@ -405,12 +405,12 @@ public class Main4Activity extends AppCompatActivity implements AdapterView.OnIt
 
     public void startSixthActivity(View view) {
 
-        String name1 = getIntent().getExtras().getString("caca1");
-        String name2 = getIntent().getExtras().getString("caca2");
+        String name1 = getIntent().getExtras().getString("text1");
+        String name2 = getIntent().getExtras().getString("text2");
 
         Intent main5Activity = new Intent(this, Main5Activity.class);
-        main5Activity.putExtra("caca1", name1);
-        main5Activity.putExtra("caca2", name2);
+        main5Activity.putExtra("text1", name1);
+        main5Activity.putExtra("text2", name2);
         main5Activity.putExtra("com.example.android.startpageice.Steps1Score", mScore1Steps);
         main5Activity.putExtra("com.example.android.startpageice.Steps2Score", mScore2Steps);
         main5Activity.putExtra("com.example.android.startpageice.Jumps1Score", mScore1Jumps);

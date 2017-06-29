@@ -28,8 +28,8 @@ public class Main5Activity extends AppCompatActivity {
         mScore2Steps = i.getFloatExtra("com.example.android.startpageice.Steps2Score", 0);
         mScore1Spins = i.getFloatExtra("com.example.android.startpageice.Spins1Score", 0);
         mScore2Spins = i.getFloatExtra("com.example.android.startpageice.Spins2Score", 0);
-        mName1 = i.getStringExtra("caca1");
-        mName2 = i.getStringExtra("caca2");
+        mName1 = i.getStringExtra("text1");
+        mName2 = i.getStringExtra("text2");
     }
 
     @Override

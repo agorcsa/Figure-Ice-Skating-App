@@ -194,12 +194,12 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
     }
 
     public void startForthActivity(View view) {
-        String name1 = getIntent().getExtras().getString("caca1");
-        String name2 = getIntent().getExtras().getString("caca2");
+        String name1 = getIntent().getExtras().getString("text1");
+        String name2 = getIntent().getExtras().getString("text2");
 
         Intent main4Activity = new Intent(this, Main4Activity.class);
-        main4Activity.putExtra("caca1", name1);
-        main4Activity.putExtra("caca2", name2);
+        main4Activity.putExtra("text1", name1);
+        main4Activity.putExtra("text2", name2);
         main4Activity.putExtra("com.example.android.startpageice.Steps1Score", mScore1Steps);
         main4Activity.putExtra("com.example.android.startpageice.Steps2Score", mScore2Steps);
         main4Activity.putExtra("com.example.android.startpageice.Jumps1Score", mSkaterScores[0]);
