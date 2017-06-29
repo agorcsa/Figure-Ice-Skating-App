@@ -481,15 +481,11 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
      * Restarts the activity every time we press the "start" button.
      */
     public void startThirdActivity(View view) {
-
         String name1 = getIntent().getExtras().getString("text1");
         String name2 = getIntent().getExtras().getString("text2");
-
         Intent main3Activity = new Intent(this, Main3Activity.class);
-
         main3Activity.putExtra("text1", name1);
         main3Activity.putExtra("text2", name2);
-
         main3Activity.putExtra("com.example.android.startpageice.Steps1Score", mSkaterScores[0]);
         main3Activity.putExtra("com.example.android.startpageice.Steps2Score", mSkaterScores[1]);
         startActivity(main3Activity);

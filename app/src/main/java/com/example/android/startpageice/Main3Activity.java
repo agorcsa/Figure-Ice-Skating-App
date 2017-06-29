@@ -196,7 +196,6 @@ public class Main3Activity extends AppCompatActivity implements AdapterView.OnIt
     public void startForthActivity(View view) {
         String name1 = getIntent().getExtras().getString("text1");
         String name2 = getIntent().getExtras().getString("text2");
-
         Intent main4Activity = new Intent(this, Main4Activity.class);
         main4Activity.putExtra("text1", name1);
         main4Activity.putExtra("text2", name2);
