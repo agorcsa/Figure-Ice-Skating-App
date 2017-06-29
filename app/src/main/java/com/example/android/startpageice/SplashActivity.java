@@ -16,15 +16,11 @@ public class SplashActivity extends AppCompatActivity {
 
     private GifImageView gifImageView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
         gifImageView = (GifImageView) findViewById(R.id.gifImageView);
-
-
         /**
          * Set GIFImageView as a resource
          */
@@ -38,16 +34,15 @@ public class SplashActivity extends AppCompatActivity {
         }
 
         /**
-         * Wait for 3 seconds and start MainActivity
+         * Wait for 3 seconds and start Main1Activity
          */
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                SplashActivity.this.startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                SplashActivity.this.startActivity(new Intent(SplashActivity.this, Main1Activity.class));
                 SplashActivity.this.finish();
             }
 
-        },1900); /** 3000 = 3 seconds */
+        }, 1900); /** 3000 = 3 seconds */
     }
-
 }

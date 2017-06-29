@@ -534,6 +534,28 @@
         <item name="android:layout_marginRight">@dimen/marginM</item>
     </style>
 
+    <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/blue_grey</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="EditText.Skater1">
+        <item name="android:hint">Skater 1</item>
+        <item name="android:layout_marginLeft">@dimen/marginM</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="EditText.Skater2">
+        <item name="android:hint">Skater 2</item>
+        <item name="android:layout_marginRight">@dimen/marginM</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
 </resources>
 
 

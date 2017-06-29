@@ -20,9 +20,23 @@
 
             <TextView style="@style/Layout.AppName" />
 
-            <Button style="@style/Layout.StartButton" />
+            <Button
+                android:id="@+id/startButton"
+                style="@style/Layout.StartButton"
+                android:onClick="getSkater1Name" />
+
+            <EditText
+                android:id="@+id/fillSkater1"
+                style="@style/EditText.Skater1"
+                android:hint="Skater 1" />
+
+            <EditText
+                android:id="@+id/fillSkater2"
+                style="@style/EditText.Skater2"
+                android:hint="Skater 2" />
 
             <TextView style="@style/Layout.Hint" />
+
         </RelativeLayout>
 
     </LinearLayout>

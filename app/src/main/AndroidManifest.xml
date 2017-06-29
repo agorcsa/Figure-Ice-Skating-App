@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Main1Activity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Main2Activity"
@@ -30,7 +30,7 @@
             android:name=".Main3Activity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Main6Activity"
+            android:name=".Main5Activity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".Main4Activity"
